@@ -1,0 +1,74 @@
+@import 'navbar.scss';
+@import 'carousel.scss';
+@import 'counter.scss';
+@import 'slider.scss';
+@import 'manufactures.scss';
+@import 'customers.scss';
+@import 'project.scss';
+@import 'footer.scss';
+
+
+
+#services {
+    .blue {
+        color: white;
+        background: #136cbf;
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    h1 {
+        padding: 20px 0px;
+        text-align: center;
+        font-size: 3em;
+        font-family: sans-serif;
+    }
+
+    h4 {
+        text-align: center;
+        font-size: 1.8em;
+        padding-bottom: 20px;
+        font-family: sans-serif;
+    }
+
+    @media only screen and (max-width: 770px) {
+        display: none;
+    }
+
+}
+
+
+#button {
+  display: inline-block;
+  background-color: #136CBF;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,  opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+    i{
+        font-size: 25px;
+        color: #fff;
+        margin-top:10px;
+    }
+  &:hover {
+    cursor: pointer;
+    background-color: #fff;
+      i{
+          color: #136CBF;
+      }
+  }
+  &:active {
+    background-color: #136CBF;
+  }
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+}

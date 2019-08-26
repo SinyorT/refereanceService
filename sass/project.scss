@@ -1,0 +1,36 @@
+#project {
+    .container {
+        h1::after {
+            content: '';
+            background: #0E7CE4;
+            display: block;
+            height: 3px;
+            width: 170px;
+            margin: 20px auto 5px;
+        }
+        
+        .row{
+            margin-top: 40px;
+            img{
+                border-radius: 10px;
+            }
+            .col-md-4{
+                margin: 10px auto;
+            }
+        }
+        .btn-blog{
+            margin: 30px auto;
+            border-radius: 30px;
+            background-color: #0069D9;
+            border: 1px solid #0069D9;
+            color: #fff;
+            cursor: pointer;
+            transition: all .2s linear;
+
+            &:hover {
+                color: white;
+                box-shadow: 0px 0px 29px 10px #0069D9;
+            }
+        }
+    }
+}
